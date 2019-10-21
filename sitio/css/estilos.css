@@ -1,4 +1,7 @@
 
+html {
+  scroll-behavior: smooth;
+}
 body{
 	font-family: 'Lato', sans-serif;
 }
@@ -51,7 +54,7 @@ body{
 	animation-duration: 4s;
 	position: absolute;
 	width: 30%;
-	font-size: 250%;
+	font-size: 230%;
 	bottom: 2px;
 	margin-left: 10%;
 	z-index: 2;
@@ -62,13 +65,15 @@ body{
                     }
 .header2{ background: white;
                     height: 10px; } 
-
+#seccion2{}
 .seccion2{padding: 20px;}
 .estiloSeccion2{
 	font-family: 'Lato', sans-serif;
 	font-size: 200%;
 	padding-top: 40%;
 }
+
+#seccionNovedades{}
 
 .seccion3{background-color: rgb(255, 204, 204);
 	padding: 20px;
@@ -97,6 +102,7 @@ body{
 .cardTextColor{
 	color: black;
 }
+#seccion4{}
 .seccion4{
 	padding-top: 20px;
 
@@ -125,19 +131,42 @@ body{
 }
 
 .seccionVideo{
-	background-color: rgb(66,66,66);
+	background-color: rgb(255, 204, 204);/*#D0D1D2;*/
 	align-text: center
 }
 #embed{
 	padding: 2%;
 
-
 }
+.seccion6{ background: #D0D1D2; }
+.colorFooter{ background-color: #D0D1D2;}
+
+.icon{
+	font-size:25px;
+	color:black;
+	padding-right: 10px;
+}
+.icon:hover{
+	color: white;
+}
+.centrar{text-align: center;
+		}
+
+.seccion7{ background: rgb(33,33,33);
+                    }
+.txt_2 {
+	text-align: right;
+	color: white;
+	padding: 5px;
+	}
+
+
+
 .section1{ background: rgb(121,134,203);
                      }
 .section2{ background: rgb(245,245,245);
                 padding: 40px;}
-.section3{ background: rgb(38,50,56);
+.section3{ background: rgb(189,189,189);
                     height: 200px;}
 .section4{ background: rgb(33,33,33);
                     height: 30px; }
@@ -151,7 +180,53 @@ body{
 	color: black;
 }
 
+/* ----- Quienes Somos ------*/
+#qsSeccion1{
+	background: url("../img/MG_3018.gif");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#qscontenedor{
+		  width: 80%;
+		  background-color: rgba(255,255,255,0.6);
+          height:800px;
+          margin-right: auto;
+          margin-left: auto;
+          /*column-count: 2;
+          column-gap: 50px;
+          column-rule: 2px solid #f00;*/
+          padding: 15px;
+    }
+/* ------- Media Queries -------*/
 
+/*Dispositivos Medianos*/
+@media	screen and (max-width: 959px) and (min-width: 560px)
+					 {
+	.textoImagenPortada1{
+		font-size: 120%;
+		bottom: 150px;
+		}
+	.formulario{
+		left: 5px;
+		top: 10px;
+		}
+	}
+
+
+/*Dispositivos pequeños*/
+
+@media	screen and (max-width: 559px) and (min-width: 0px){
+	.textoImagenPortada1{
+		font-size: 100%;
+		bottom: 190px;
+		}
+	.formulario{
+		left: 1px;
+		top: 10px;
+		}
+}
 
 
                     
