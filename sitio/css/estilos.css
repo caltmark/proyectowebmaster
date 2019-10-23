@@ -30,9 +30,6 @@ body{
 	height: 100px;
 }
 .portada1{
-		/*background-image: url("../img/pandora.jpg");
-		width: 1200px;
-		height: 1000px;*/
 		text-align: left;
 }
 
@@ -56,7 +53,7 @@ body{
 	width: 30%;
 	font-size: 230%;
 	bottom: 2px;
-	margin-left: 10%;
+	margin-left: 2%;
 	z-index: 2;
 }
 
