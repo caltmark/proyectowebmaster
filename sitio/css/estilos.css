@@ -72,10 +72,11 @@ body{
 	font-size: 200%;
 	padding-top: 40%;
 }
+.colorLink{color: black;}
 
 #seccionNovedades{}
 
-.seccion3{background-color: rgb(255, 204, 204);
+.seccion3{background-color: pink ; /*rgb(255, 204, 204);*/
 	padding: 20px;
 }
 .imagenSeccion3{
@@ -108,7 +109,7 @@ body{
 
 }
 .formulario{
-	background-color: rgb(255, 204, 204);
+	background-color: pink; /* rgb(255, 204, 204);*/
 	padding-top: 8px;
 	position: relative;
 	left: -80px;
@@ -125,13 +126,13 @@ body{
 }
 .cardHover:hover{
 	transform: scale(1.1,1.1);
-	background: rgb(255, 204, 204);
+	background: #FFCDD2;/*pink;  rgb(255, 204, 204);*/
 	z-index: 1;
 	
 }
 
 .seccionVideo{
-	background-color: rgb(255, 204, 204);/*#D0D1D2;*/
+	background-color: pink /* rgb(255, 204, 204);#D0D1D2;*/
 	align-text: center
 }
 #embed{
