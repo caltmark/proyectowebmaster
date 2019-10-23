@@ -140,6 +140,8 @@ body{
 }
 .seccion6{ background: #D0D1D2; }
 .colorFooter{ background-color: #D0D1D2;}
+.colorForm{background-color: #FFEBEE;}
+.colorFormFooter{background-color: #EFEBE9}
 
 .icon{
 	font-size:25px;
@@ -151,6 +153,7 @@ body{
 }
 .centrar{text-align: center;
 		}
+.redesSociales{display: row;}
 
 .seccion7{ background: rgb(33,33,33);
                     }
@@ -219,14 +222,43 @@ body{
 
 @media	screen and (max-width: 559px) and (min-width: 0px){
 	.textoImagenPortada1{
-		font-size: 100%;
-		bottom: 190px;
+		font-size: 130%;
+		bottom: 0px;
+		color: black;
+		width: 100%;
+		text-align: center;
+		margin-left: 0%;
+		z-index: 0;
+		position: static;
 		}
+	
 	.formulario{
 		left: 1px;
 		top: 10px;
 		}
+	.imagenSeccion3{
+		position: relative;
+		top: 3px;
+		/*z-index: -1;*/
+	}
+	.TextoFotoSeccion3{
+		position: static;
+		bottom: 0px;
+		font-size: 150%;
+		z-index: 10;
+		
+	}
 }
-
+.card-columns {
+	@include media-breakpoint-only(sm) {
+    column-count: 2;
+  }
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
 
                     
