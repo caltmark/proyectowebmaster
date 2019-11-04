@@ -13,6 +13,19 @@ body{
 	background-color: white;
 	z-index: 1000;
 }
+.parallax {
+  /* The image used */
+  background-image: url("../img/PortadaYael.jpg");
+
+  /* Set a specific height */
+  min-height: 1000px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #contenedor{
 	margin: 0;
 	/*font-family: "Arial", "Helvetica", sans-serif;*/
@@ -33,12 +46,10 @@ body{
 		text-align: left;
 }
 
-.imagenPortada1{
-	/*height: 900px;*/
-	/*position: absolute;
-  left: 0px;
-  top: 0px;*/
-  /*z-index: -1;*/
+#imagenPortada1{
+	background: url(../img/PortadaYael.jpg);
+			background-attachment: fixed;
+			background-size: cover;
 }
 @keyframes apareceTexto{
 	0%{opacity:0;}
@@ -55,6 +66,7 @@ body{
 	bottom: 2px;
 	margin-left: 2%;
 	z-index: 2;
+	color: white;
 }
 
 .header1{ background: white;
@@ -70,6 +82,7 @@ body{
 	padding-top: 40%;
 }
 .colorLink{color: black;}
+.tresFotosPorFila{}
 
 #seccionNovedades{}
 
@@ -99,6 +112,7 @@ body{
 }
 .cardTextColor{
 	color: black;
+	text-align: center;
 }
 #seccion4{}
 .seccion4{
@@ -201,10 +215,16 @@ body{
           padding: 15px;
     }
 /* ------- Media Queries -------*/
-
+/*Dispositivos Grandes*/
+@media	screen and (min-width: 960px){
+	.header2{display: none;}
+	.portada1{display: none;} 
+	.imagenPortada1{display: none;}
+}
 /*Dispositivos Medianos*/
 @media	screen and (max-width: 959px) and (min-width: 560px)
 					 {
+	.parallax {display: none;}				 	
 	.textoImagenPortada1{
 		font-size: 120%;
 		bottom: 150px;
@@ -213,12 +233,14 @@ body{
 		left: 5px;
 		top: 10px;
 		}
+	
 	}
 
 
 /*Dispositivos pequeños*/
 
 @media	screen and (max-width: 559px) and (min-width: 0px){
+	.parallax {display: none;}
 	.textoImagenPortada1{
 		font-size: 130%;
 		bottom: 0px;
@@ -243,14 +265,13 @@ body{
 		position: static;
 		bottom: 0px;
 		font-size: 150%;
-		z-index: 10;
-		
+		z-index: 10;	
 	}
+	.estilo{display: none;}
+	.tresFotosPorFila{display: none;}
 }
 .card-columns {
-	@include media-breakpoint-only(sm) {
-    column-count: 2;
-  }
+
   @include media-breakpoint-only(lg) {
     column-count: 4;
   }
@@ -258,5 +279,6 @@ body{
     column-count: 5;
   }
 }
+
 
                     
